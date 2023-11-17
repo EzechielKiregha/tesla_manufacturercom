@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+@font-face {
+    font-family: tesla;
+    src: url(/tesla-font/TESLA.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+    font-size: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.header-car {
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    font-family: Lato;
+    letter-spacing: 1px;
+    font-weight: 100px;
+    background-image: url('/media/shop/Homepage-Shop.avif');
+    /* background-color: rgba(0, 0, 0, 0.251);
+    background-blend-mode: multiply; */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.navbar-car {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    top: -20px;
+    position: fixed;
+    background-color:transparent;
+    color: white;
+}
+
+.navbar-car a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-car ul li {
+    display: inline;
+    justify-content: space-between;
+    margin-right: 10px;
+    
+}
+
+.navbar-car ul li a {
+    font-size: medium;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logout-form {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.logout-button {
+    font-size: 24px;
+}
+.logout-form button{
+    color: #000000;
+    border-radius: 1px 10px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    &:hover{
+        background-color: #000000;
+        color: #f1f1f1;
+    }
+}
+.navbar-car a img{
+    width: 43px;
+    height: 43px;
+}
+.navbar-car .logo{
+    width: 120px;
+    height: auto;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    margin-right: 1.5em;
+    border-radius: 50%;
+}
+
+.btn a{
+    font-family: tesla;
+    color: black;
+    &:hover{
+        transition: 0.3s all ease-in-out;
+    }
+
+}
+p {
+    font-size: 1em;
+    padding: 15px 0 10px 0;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.921);
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family: lato;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -5px;
+    transition: all ease-in-out 1s;
+}
+
+h2, h3 {
+    font-family: lato;
+    color: rgb(255, 255, 255);
+    margin-top: -5px;
+    transition: all ease-in-out 1s;
+}
+.related {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17em;
+    padding: 10px;
+    color: #ffffff;
+    
+}
+.p {
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.order {
+    margin: 25px;
+    margin-bottom: 6%;
+}
+
+.order a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 4px 19px;
+    border: 2px solid white;
+    border-radius: 4px 9px;
+    transition: all ease-in-out 0.5s;
+    &:hover{
+        border-radius: 9px 4px;
+        background-color: #fefdfc;
+        color: #000000;
+    }
+    
+}
+.rel {
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    color: #000106;
+    transition: all ease-in-out 1s;
+    &:hover{
+        background-color: #000000;
+        color: #fff;
+    }
+}
+.rel h1 {
+    font-family: tesla;
+    font-weight: bold;
+}
+/* Products section*/
+
+.rent_section {
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #fffffff2;
+    transition: all ease-in-out 3s;
+    &:hover {
+        background-color: #000000;
+    }
+}
+
+.rent_section .rent_container {
+    display: -webkit-box;
+    /* display: -ms-flexbox; */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.rent_section .rent_container .box {
+    width: 30%;
+    margin: 15px;
+    background-color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 20px 25px;
+    padding-bottom: 0;
+    border-radius: 5px;
+}
+
+.rent_section .rent_container .box .img-box {
+    margin: 50px 0;
+    height: 92px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.rent_section .rent_container .box .img-box img {
+    max-width: 110%;
+    cursor: pointer;
+    border-radius: 15px 3px;
+    transition: all ease-in-out 1s;
+    &:hover{
+        border-radius: 3px 15px;
+    }
+}
+
+.rent_section .rent_container .box .price a {
+    display: inline-block;
+    padding: 8px 8px;
+    background-color: #000205;
+    color: #fefdfc;
+    text-decoration: none;
+    border-radius: 2px 9px;
+    border: 1px solid #000000;
+    font-weight: bold;
+    transition: all ease-in-out 1s;
+}
+
+.rent_section .rent_container .box .price a:hover {
+    background-color: #000000;
+    color: #e6eef4;
+    border: none;
+}
+
+.rent_section .btn-box, .btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.btn-box{
+    padding: 10px 10px;
+    margin-top: 25px;
+    margin-left:45%;
+    width: 10%;
+    background-color: #1c15a7;
+    color: #fefdfc;
+    border-radius: 2px 9px;
+    cursor: pointer;
+    border: 1px solid #010109;
+    font-weight: bold;
+    transition: all ease-in-out 1s;
+    &:hover {
+        border-radius: 9px 2px;
+    }
+}
+
+.btn-box a {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 2px 9px;
+}
+
+.rent_section .btn-box a:hover {
+    background-color: transparent;
+    color: #fefdfc;
+}
+
+/* end product section */
+
+
+/* footer */
+.foo {
+    background-color: #000106;
+    /* margin-bottom: 20px; */
+}

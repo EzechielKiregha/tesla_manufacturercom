@@ -1,0 +1,200 @@
+@font-face {
+    font-family: tesla;
+    src: url(/tesla-font/TESLA.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    font-family: tesla;
+    background-image: url('/media/cars/Homepage-Model-X-Desktop-LHD.avif');
+    background-color: rgba(0, 0, 0, 0.342);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    padding: 0 7%;
+    transition: background-image 1.5s;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav .logo{
+    width: 180px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: center;
+
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: #fff;
+}
+.btn{
+    color: #000000;
+    border-radius: 1px 10px;
+    padding:5px 15px;
+    margin-right: 7em;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    &:hover{
+        background-color: #01011e;
+        color: #f1f1f1;
+    }
+}
+
+/* Navbar - Menu style */
+.custom_menu-btn, .overlay_btn {
+    z-index: 9;
+    position: absolute;
+    right: 35px;
+    top: 7px;
+}
+.custom_menu-btn button, .overlay_btn button {
+    margin-top: 7px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.custom_menu-btn span, .overlay_btn span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    margin: 7px 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.custom_menu-btn .custom_menu-btn .s-2 {
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+.menu_btn-style button {
+    position: fixed;
+    right: 29px;
+    top: 14px;
+}
+
+.menu_btn-style button .s-1 , .overlay_btn button .s-1 {
+    -webkit-transform: rotate(45deg) translateY(16px);
+            transform: rotate(45deg) translateY(16px);
+}
+
+.menu_btn-style button .s-2, .overlay_btn button .s-2 {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+}
+
+.menu_btn-style button .s-3, .overlay_btn button .s-3 {
+    -webkit-transform: rotate(-45deg) translateY(-16px);
+            transform: rotate(-45deg) translateY(-16px);
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 9, 39, 0.77);
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 50px;
+}
+
+.overlay a {
+    padding: 2px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: tesLa;
+    color: #f1f1f1;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu_width {
+    width: 100%;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #000000;
+}
+
+.btn,
+.btn:focus {
+    outline: none !important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+/* end menu */
+
+.info{
+    width: 100%;
+    padding: 0 7%;
+    display:flex;
+    font-family: tesla;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+}
+.info div{
+    margin: 0 20px;
+}
+.info h2{
+    font-size: 25px;
+    font-weight: 300px;
+}
+.info .line{
+    flex: 1;
+    background: #fff;
+    height: 2px;
+}

@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+@font-face {
+    font-family: tesla;
+    src: url(/tesla-font/TESLA.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* center container in the middle */
+html {
+    
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a img{
+    width: 120px;
+    height: auto;
+}
+
+.logout-form {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.logout-button {
+    font-size: 24px;
+}
+.logout-form button{
+    color: #000000;
+    border-radius: 1px 10px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    &:hover{
+        background-color: #000000;
+        color: #f1f1f1;
+    }
+}
+
+.container_shop {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1200px;
+    margin-top: 10px;
+    height: 480px;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    &:hover {
+        box-shadow: 5px 5px 15px #000e89;
+    }
+}
+
+p {
+font-size: 0.6em;
+padding-bottom: 8px;
+margin-bottom: 5px;
+color: rgba(0, 0, 0, 0.921);
+letter-spacing: 1px;
+}
+
+h1 {
+    font-family: tesla;
+    font-size: 2.3em;
+    color: #271f81;
+    margin-top: -5px;
+    transition: all ease-in-out 1s;
+}
+
+h2 {
+    color: rgb(0, 10, 99);
+    margin-top: -5px;
+    transition: all ease-in-out 1s;
+}
+
+.container_shop img {
+    width: 590px;
+    border-radius: 0 50% 50% 0  ;
+    margin-top: 37px;
+}
+
+.product {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 10%;
+    left: 60%;
+}
+
+.desc {
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 35px;
+    color: #030202;
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-right: 25px;
+    text-align: justify;
+}
+
+button {
+    background: rgb(3, 27, 111);
+    padding: 10px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    margin: -1px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+        background-color: #fff;
+        transition: all .4s ease-in-out;
+        color: #000;
+    }
+}
+
+.checkout{
+width: 67%;
+}
+
+.fav {
+width: 22%;
+}
+
+.uniqness {
+    display: flex;
+    color: rgb(0, 0, 0);
+    grid-template-columns: repeat(auto-fill, 30px);
+    width: 60%;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+}
+
+.pick {
+margin-top: 11px;
+margin-bottom:0;
+margin-left: 20px;
+}
+
+.uniq {
+    width: 25%;
+    padding: 9px;
+    border: 1px solid #000e89;
+    font-size: 0.7em;
+    text-align: center;
+    &:hover{
+        color:#000000;
+        transition: all .4s ease-in-out;
+        border: 1px solid #ffffff;
+    }
+}
+
+/* Related Products */
+
+.rent_section {
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #fffffff2;
+    transition: all ease-in-out 3s;
+    &:hover {
+        background-color: #000000;
+    }
+}
+
+.rent_section .rent_container {
+    display: -webkit-box;
+    /* display: -ms-flexbox; */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.rent_section .rent_container .box {
+    width: 30%;
+    margin: 15px;
+    background-color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 20px 25px;
+    padding-bottom: 0;
+    border-radius: 5px;
+}
+
+.related {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.rent_section .rent_container .box .img-box {
+    margin: 50px 0;
+    height: 92px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.rent_section .rent_container .box .img-box img {
+    max-width: 110%;
+    cursor: pointer;
+    border-radius: 15px 3px;
+    transition: all ease-in-out 1s;
+    &:hover{
+        border-radius: 3px 15px;
+    }
+}
+
+.rent_section .rent_container .box .price a {
+    display: inline-block;
+    padding: 8px 8px;
+    background-color: #000205;
+    color: #fefdfc;
+    text-decoration: none;
+    border-radius: 2px 9px;
+    border: 1px solid #000000;
+    font-weight: bold;
+    transition: all ease-in-out 1s;
+}
+
+.rent_section .rent_container .box .price a:hover {
+    background-color: #000000;
+    color: #e6eef4;
+    border: none;
+}
+
+.rent_section .btn-box, .btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.btn-box{
+    padding: 10px 10px;
+    margin-top: 25px;
+    margin-left:45%;
+    width: 10%;
+    background-color: #1c15a7;
+    color: #fefdfc;
+    border-radius: 2px 9px;
+    cursor: pointer;
+    border: 1px solid #010109;
+    font-weight: bold;
+    transition: all ease-in-out 1s;
+    &:hover {
+        border-radius: 9px 2px;
+    }
+}
+
+.btn-box a {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 2px 9px;
+}
+
+.rent_section .btn-box a:hover {
+    background-color: transparent;
+    color: #fefdfc;
+}

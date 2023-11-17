@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+@font-face {
+    font-family: tesla;
+    src: url(/tesla-font/TESLA.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato;
+    /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.header, .header1 {
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    font-family: Lato;
+    letter-spacing: 1px;
+    font-weight: 100px;
+    background-color: rgba(0, 0, 0, 0.638);
+    background-blend-mode: multiply;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.header{
+    background-image: url('/media/cars/Homepage-Model-X-Desktop-LHD.avif');
+    background-size: cover;
+
+}
+.header1{
+    background-image: url('/media/about/About-Us-Power-Hero-Desktop-Global.avif');
+    background-size: cover;
+
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    top: -35px;
+    position: fixed;
+    background-color:transparent;
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+.navbar ul li a {
+    font-size: medium;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar a img{
+    width: 43px;
+    height: 43px;
+}
+.navbar .logo{
+    width: 120px;
+    height: auto;
+}
+
+.logout-form {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.logout-button {
+    font-size: 24px;
+}
+.logout-form button{
+    color: #fffefe;
+    border-radius: 1px 10px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    &:hover{
+        background-color: #000000;
+        color: #f1f1f1;
+    }
+}
+
+.btn a{
+    font-family: tesla;
+    color: black;
+    &:hover{
+        transition: 0.3s all ease-in-out;
+    }
+
+}
+p {
+    font-size: 1em;
+    padding: 15px 0 10px 0;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.921);
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family: lato;
+    font-size: 40px;
+    color: #06023a;
+    margin-top: -5px;
+    transition: all ease-in-out 1s;
+}
+
+h2, h3 {
+    font-family: lato;
+    color: rgb(0, 10, 99);
+    margin-top: -5px;
+    transition: all ease-in-out 1s;
+}
+.related {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 6px;
+    color: #fff;
+    
+}
+.related h1{
+    color: #fff;
+}
+.p {
+    margin-bottom: 15%;
+    font-size: medium;
+}
+.info{
+    width: 100%;
+    padding: 0 7%;
+    display: flex;
+    margin-left: 10%;
+    font-family: Lato;
+    align-items:center;
+    color: #fff;
+
+}
+.info div{
+    margin: 0 30px;
+}
+.info h2{
+    font-size: 25px;
+    font-weight: 300px;
+}
+.order  {
+    margin-top: 5%;
+}
+.order1{
+    margin-top: -9%;
+    margin-bottom: 20%;
+    
+}
+.order1 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 20px;
+    margin: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    &:hover{
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+.order a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 2px 19px;
+    margin: 20px;
+    border: 2px solid white;
+    
+}
+.order a:first-child{
+    background-color: #ffffff;
+    color: black;
+}
+.info ul{
+    width: 100%;
+}
+.info ul li {
+    font-size: medium;
+    display: inline;
+    margin-right: 10%;
+}
+.container_shop h1,.container_shop p{
+    color: #dadcf1;
+}
+.container_shop {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1200px;
+    margin-top: 10px;
+    height: 590px;
+    background: hsl(0, 0%, 0%);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 2s;
+    &:hover {
+        box-shadow: 2px 8px 20px  #000000;
+        
+    }
+}
+
+.container_shop img {
+    width: 760px;
+    margin-top: 47px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    &:hower{
+        width: 990px;
+        margin-top: 67px;
+    }
+}
+
+.product {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    top: 15%;
+    left: 65%;
+}
+
+.desc {
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 55px;
+    color: #030202;
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-right: 25px;
+    text-align: justify;
+}
+button {
+    background: rgb(0, 0, 0);
+    padding: 6px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    font-size: medium;
+    margin: -1px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    &:hover {
+        background-color: #ffffff;
+        transition: all .4s ease-in-out;
+        color: #000000;
+        border: 1px solid rgb(0, 0, 0);
+    }
+}
+
+.checkout{
+    width: 60%;
+}
+
+.fav {
+    width: 29%;
+}
+
+.uniqness {
+    display: flex;
+    color: rgb(0, 0, 0);
+    grid-template-columns: repeat(auto-fill, 30px);
+    width: 60%;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+}
+
+.pick {
+    margin-top: 11px;
+    margin-bottom:0;
+    margin-left: 20px;
+}
+.foo{
+    background-color: #000000;
+}

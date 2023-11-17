@@ -1,0 +1,123 @@
+/* Add this CSS code to your existing 'css/dash.css' file or create a new one */
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #343a40;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #fff;
+}
+
+#sidebar ul li a:hover {
+    color: #007bff;
+    background: #1c1e21;
+}
+
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+
+#sidebar.active ul.components {
+    padding: 2px;
+}
+
+#sidebar.active ul li a {
+    padding: 10px 2px;
+    font-size: 0.9em;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.words p {
+    font-size: 24px;
+}
+
+.Search input {
+    padding: 10px;
+    width: 200px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.box1,
+.box2,
+.box3 {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.chart,
+.chart2,
+.chart3 {
+    margin-bottom: 20px;
+}
+
+.side-section {
+    background: #f8f9fa;
+    padding: 20px;
+}
+
+#userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#userTable th,
+#userTable td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+}
+
+#userTable th {
+    background-color: #007bff;
+    color: #fff;
+}

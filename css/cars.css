@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+    font-size: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+.header-car {
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    font-family: Lato;
+    letter-spacing: 1px;
+    font-weight: 100px;
+    background-image: url('/media/cars/Homepage-Model-S-Desktop-LHD-6.22.avif');
+    background-color: rgba(0, 0, 0, 0.638);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.navbar-car {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    top: -20px;
+    position: fixed;
+    background-color:transparent;
+    color: white;
+}
+
+.navbar-car a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-car ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+.navbar-car ul li a {
+    font-size: medium;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar-car a img{
+    width: 43px;
+    height: 43px;
+}
+.navbar-car .logo{
+    width: 120px;
+    height: auto;
+}
+
+.logout-form {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.logout-button {
+    font-size: 24px;
+}
+.logout-form button{
+    color: #000000;
+    border-radius: 1px 10px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    &:hover{
+        background-color: #000000;
+        color: #f1f1f1;
+    }
+}
+
+.btn a{
+    font-family: tesla;
+    color: black;
+    &:hover{
+        transition: 0.3s all ease-in-out;
+    }
+
+}
+p {
+    font-size: 1em;
+    padding: 15px 0 10px 0;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.921);
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family: lato;
+    font-size: 40px;
+    color: #06023a;
+    margin-top: -5px;
+    transition: all ease-in-out 1s;
+}
+
+h2, h3 {
+    font-family: lato;
+    color: rgb(0, 10, 99);
+    margin-top: -5px;
+    transition: all ease-in-out 1s;
+}
+.related {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 10px;
+    color: #fff;
+    
+}
+.related h1{
+    color: #fff;
+}
+.p {
+    margin-bottom: 15%;
+    font-size: medium;
+}
+.info{
+    width: 100%;
+    padding: 0 7%;
+    display: flex;
+    margin-left: 10%;
+    font-family: Lato;
+    align-items:center;
+    color: #fff;
+
+}
+.info div{
+    margin: 0 30px;
+}
+.info h2{
+    font-size: 25px;
+}
+.order {
+    margin: 25px;
+    margin-bottom: 5%;
+}
+
+.order a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 2px 19px;
+    margin: 20px;
+    border: 2px solid white;
+    
+}
+.order a:first-child{
+    background-color: #ffffff;
+    color: black;
+}
+.info ul{
+    width: 100%;
+}
+.info ul li {
+    font-size: medium;
+    display: inline;
+    margin-right: 10%;
+}
+.container_shop {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1150px;
+    margin-top: 10px;
+    height: 520px;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    &:hover {
+        box-shadow: 5px 5px 15px #000e89;
+    }
+}
+
+.container_shop img {
+    width: 660px;
+    margin-top: 37px;
+}
+
+.product {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 10%;
+    left: 60%;
+}
+
+.desc {
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 35px;
+    color: #030202;
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-right: 25px;
+    text-align: justify;
+}
+button {
+    background: rgb(3, 27, 111);
+    padding: 6px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    font-size: medium;
+    margin: -1px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+        background-color: #fff;
+        transition: all .4s ease-in-out;
+        color: #000;
+    }
+}
+
+.checkout{
+    width: 60%;
+}
+
+.fav {
+    width: 29%;
+}
+
+.uniqness {
+    display: flex;
+    color: rgb(0, 0, 0);
+    grid-template-columns: repeat(auto-fill, 30px);
+    width: 60%;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+}
+
+.pick {
+    margin-top: 11px;
+    margin-bottom:0;
+    margin-left: 20px;
+}
